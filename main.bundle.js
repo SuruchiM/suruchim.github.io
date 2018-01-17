@@ -301,7 +301,9 @@ var LoginService = /** @class */ (function () {
     }
     LoginService.prototype.validateUser = function (userName, userPassword) {
         var url = this.apiRoot + '/api/ProviderData/Login';
-        var params = new __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["c" /* HttpParams */]();
+        var httpHeaders = new __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["c" /* HttpHeaders */]();
+        httpHeaders.append("", "");
+        var params = new __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["d" /* HttpParams */]();
         params = params.append("user_name", userName);
         params = params.append("user_password", userPassword);
         try {
@@ -356,7 +358,7 @@ var ProviderDataService = /** @class */ (function () {
     ProviderDataService.prototype.getProviderData = function (minDischarges, maxDischarges, minAvgCoveredCharges, maxAvgCoveredCharges, minAvgMedicarePayments, maxAvgMedicarePayments, state) {
         var url = this.apiRoot + '/api/ProviderData/Get';
         var search = '?';
-        var params = new __WEBPACK_IMPORTED_MODULE_1__angular_common_http__["c" /* HttpParams */]();
+        var params = new __WEBPACK_IMPORTED_MODULE_1__angular_common_http__["d" /* HttpParams */]();
         params = params.append("max_discharges", maxDischarges);
         params = params.append("min_discharges", minDischarges);
         params = params.append("max_average_covered_charges", maxAvgCoveredCharges);
