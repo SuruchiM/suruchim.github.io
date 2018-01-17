@@ -1,2 +1,2 @@
 # suruchim.github.io
-My Angular App
+This application is built in Angular and is used to search the data based on the filetr criterias.
