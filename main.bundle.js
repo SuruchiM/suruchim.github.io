@@ -399,7 +399,7 @@ var ProviderDataService = /** @class */ (function () {
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 var environment = {
     production: false,
-    apiUrl: "http://healthcareproviderservices20180117120432.azurewebsites.net",
+    apiUrl: "https://healthcareproviderservices20180117120432.azurewebsites.net",
     pageSize: "20"
 };
 
